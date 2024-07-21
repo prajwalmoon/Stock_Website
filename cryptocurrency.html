@@ -1,0 +1,755 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+    <title>Cryptocurrency</title>
+</head>
+<body style="background-color: #222531;">
+   <section class="text-gray-600 body-font">
+        <div class="container px-5 py-24 mx-auto">
+          <div class="flex flex-col">
+            <div class="h-1 bg-gray-200 rounded overflow-hidden">
+              <div class="w-24 h-full bg-indigo-500"></div>
+            </div>
+            <div class="flex flex-wrap sm:flex-row flex-col py-6 mb-12">
+              <h1 class="sm:w-2/5 text-white-900 font-medium title-font text-2xl mb-2 sm:mb-0" style="color: white;">
+                Today's Cryptocurrency Prices by Market Cap</h1>
+            </div>
+          </div>
+      </section>
+      <div class="flex flex-col">
+        <div class="-my-2 overflow-x-auto sm:-mx-6 lg:-mx-8">
+          <div class="py-2 align-middle inline-block min-w-full sm:px-6 lg:px-8">
+            <div class="shadow overflow-hidden border-b border-gray-200 sm:rounded-lg">
+              <table class="min-w-full divide-y divide-white">
+                <thead class="bg-#323546">
+                  <tr>
+                    <th scope="col" class="px-6 py-3 text-left text-xs font-medium text-white uppercase tracking-wider">
+                      Name
+                    </th>
+                    <th scope="col" class="px-6 py-3 text-left text-xs font-medium text-white uppercase tracking-wider">
+                        Price
+                    </th>
+                    <th scope="col" class="px-6 py-3 text-left text-xs font-medium text-white uppercase tracking-wider">
+                     24h %
+                    </th>
+                    <th scope="col" class="px-6 py-3 text-left text-xs font-medium text-white uppercase tracking-wider">
+                        7d %
+                    </th>
+                    <th scope="col" class="px-6 py-3 text-left text-xs font-medium text-white uppercase tracking-wider">
+                        Market Cap
+                    </th>
+                    <th scope="col" class="px-6 py-3 text-left text-xs font-medium text-white uppercase tracking-wider">
+                        Volume(24h)
+                    </th>
+                    <th scope="col" class="px-6 py-3 text-left text-xs font-medium text-white uppercase tracking-wider">
+                        Last 7 Days
+                    </th>
+                  </tr>
+                </thead>
+                <tbody class="bg-indigo divide-y divide-gray-200">
+                  <tr>
+                    <td class="px-6 py-4 whitespace-nowrap">
+                      <div class="flex items-center">
+                        <div class="ml-4">
+                          <div class="text-sm font-medium text-white" >
+                            <img src="https://s2.coinmarketcap.com/static/img/coins/64x64/1.png" width="35" height="35">
+                            </img>
+                            Bitcoin BTC
+                          </div>
+                        </div>
+                      </div>
+                    </td>
+                    <td class="px-6 py-4 whitespace-nowrap text-sm text-white">
+                        ₹2,681,381.22
+                    </td>
+                    <td class="px-6 py-4 whitespace-nowrap">
+                        <span class="px-2 inline-flex text-xs leading-5 font-semibold rounded-full bg-red-100 text-red-800">
+                            5.95
+                        </span>
+                    </td>
+                    <td class="px-6 py-4 whitespace-nowrap">
+                      <span class="px-2 inline-flex text-xs leading-5 font-semibold rounded-full bg-green-100 text-green-800">
+                        1.04
+                      </span>
+                    </td>
+                    <td class="px-6 py-4 whitespace-nowrap text-sm text-white">
+                        ₹50,107,025,722,195
+                    </td>
+                    <td class="px-6 py-4 whitespace-nowrap text-sm text-white">
+                        ₹2,866,447,595,282
+                    </td>
+                    <td>
+                        <img src="https://s3.coinmarketcap.com/generated/sparklines/web/7d/usd/1839.png" >
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="px-6 py-4 whitespace-nowrap">
+                      <div class="flex items-center">
+                        <div class="ml-4">
+                          <div class="text-sm font-medium text-white" >
+                            <img src="https://s2.coinmarketcap.com/static/img/coins/64x64/1027.png" width="35" height="35">
+                            </img>
+                            Ethereum ETH
+                          </div>
+                        </div>
+                      </div>
+                    </td>
+                    <td class="px-6 py-4 whitespace-nowrap text-sm text-white">
+                        ₹192,079.13
+                    </td>
+                    <td class="px-6 py-4 whitespace-nowrap">
+                        <span class="px-2 inline-flex text-xs leading-5 font-semibold rounded-full bg-red-100 text-red-800">
+                            7.92%
+                        </span>
+                    </td>
+                    <td class="px-6 py-4 whitespace-nowrap">
+                      <span class="px-2 inline-flex text-xs leading-5 font-semibold rounded-full bg-green-100 text-green-800">
+                        4.64%
+                      </span>
+                    </td>
+                    <td class="px-6 py-4 whitespace-nowrap text-sm text-white">
+                        ₹22,349,701,901,848
+                    </td>
+                    <td class="px-6 py-4 whitespace-nowrap text-sm text-white">
+                        ₹2,369,239,802,280
+                    </td>
+                    <td>
+                        <img src="https://s3.coinmarketcap.com/generated/sparklines/web/7d/usd/1027.png" >
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="px-6 py-4 whitespace-nowrap">
+                      <div class="flex items-center">
+                        <div class="ml-4">
+                          <div class="text-sm font-medium text-white" >
+                            <img src="https://s2.coinmarketcap.com/static/img/coins/64x64/825.png" width="35" height="35">
+                            </img>
+                            Tether USDT
+                          </div>
+                        </div>
+                      </div>
+                    </td>
+                    <td class="px-6 py-4 whitespace-nowrap text-sm text-white">
+                        ₹73.17
+                    </td>
+                    <td class="px-6 py-4 whitespace-nowrap">
+                        <span class="px-2 inline-flex text-xs leading-5 font-semibold rounded-full bg-red-100 text-red-800">
+                            0.06%	
+                        </span>
+                    </td>
+                    <td class="px-6 py-4 whitespace-nowrap">
+                      <span class="px-2 inline-flex text-xs leading-5 font-semibold rounded-full bg-green-100 text-green-800">
+                        1.39%
+                      </span>
+                    </td>
+                    <td class="px-6 py-4 whitespace-nowrap text-sm text-white">
+                        ₹4,529,144,814,147 
+                    </td>
+                    <td class="px-6 py-4 whitespace-nowrap text-sm text-white">
+                        ₹6,651,904,072,135
+                    </td>
+                    <td>
+                        <img src="https://s3.coinmarketcap.com/generated/sparklines/web/7d/usd/825.png" >
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="px-6 py-4 whitespace-nowrap">
+                      <div class="flex items-center">
+                        <div class="ml-4">
+                          <div class="text-sm font-medium text-white" >
+                            <img src="https://s2.coinmarketcap.com/static/img/coins/64x64/1839.png" width="35" height="35">
+                            </img>
+                            Binance Coin BNB
+                          </div>
+                        </div>
+                      </div>
+                    </td>
+                    <td class="px-6 py-4 whitespace-nowrap text-sm text-white">
+                        ₹27,985.42
+                    </td>
+                    <td class="px-6 py-4 whitespace-nowrap">
+                        <span class="px-2 inline-flex text-xs leading-5 font-semibold rounded-full bg-red-100 text-red-800">
+                            10.13%
+                        </span>
+                    </td>
+                    <td class="px-6 py-4 whitespace-nowrap">
+                      <span class="px-2 inline-flex text-xs leading-5 font-semibold rounded-full bg-green-100 text-green-800">
+                        13.69%
+                      </span>
+                    </td>
+                    <td class="px-6 py-4 whitespace-nowrap text-sm text-white">
+                        ₹4,258,574,275,074
+                    </td>
+                    <td class="px-6 py-4 whitespace-nowrap text-sm text-white">
+                        ₹349,523,030,578
+                    </td>
+                    <td>
+                        <img src="https://s3.coinmarketcap.com/generated/sparklines/web/7d/usd/1839.png" >
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="px-6 py-4 whitespace-nowrap">
+                      <div class="flex items-center">
+                        <div class="ml-4">
+                          <div class="text-sm font-medium text-white" >
+                            <img src="https://s2.coinmarketcap.com/static/img/coins/64x64/2010.png" width="35" height="35">
+                            </img>
+                            Cardano ADA
+                          </div>
+                        </div>
+                      </div>
+                    </td>
+                    <td class="px-6 py-4 whitespace-nowrap text-sm text-white">
+                        ₹122.67
+                    </td>
+                    <td class="px-6 py-4 whitespace-nowrap">
+                        <span class="px-2 inline-flex text-xs leading-5 font-semibold rounded-full bg-red-100 text-red-800">
+                            7.93%
+                        </span>
+                    </td>
+                    <td class="px-6 py-4 whitespace-nowrap">
+                      <span class="px-2 inline-flex text-xs leading-5 font-semibold rounded-full bg-green-100 text-green-800">
+                        8.39%
+                      </span>
+                    </td>
+                    <td class="px-6 py-4 whitespace-nowrap text-sm text-white">
+                        ₹3,909,349,716,131
+                    </td>
+                    <td class="px-6 py-4 whitespace-nowrap text-sm text-white">
+                        ₹334,237,849,178
+                    </td>
+                    <td>
+                        <img src="https://s3.coinmarketcap.com/generated/sparklines/web/7d/usd/2010.png" >
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="px-6 py-4 whitespace-nowrap">
+                      <div class="flex items-center">
+                        <div class="ml-4">
+                          <div class="text-sm font-medium text-white" >
+                            <img src="https://s2.coinmarketcap.com/static/img/coins/64x64/74.png" width="35" height="35">
+                            </img>
+                              Dogecoin DOGE
+                          </div>
+                        </div>
+                      </div>
+                    </td>
+                    <td class="px-6 py-4 whitespace-nowrap text-sm text-white">
+                        ₹26.66
+                    </td>
+                    <td class="px-6 py-4 whitespace-nowrap">
+                        <span class="px-2 inline-flex text-xs leading-5 font-semibold rounded-full bg-red-100 text-red-800">
+                            15.80%	
+                        </span>
+                    </td>
+                    <td class="px-6 py-4 whitespace-nowrap">
+                      <span class="px-2 inline-flex text-xs leading-5 font-semibold rounded-full bg-green-100 text-green-800">
+                        14.39%	
+                      </span>
+                    </td>
+                    <td class="px-6 py-4 whitespace-nowrap text-sm text-white">
+                        ₹3,478,816,395,753
+                    </td>
+                    <td class="px-6 py-4 whitespace-nowrap text-sm text-white">
+                        ₹506,334,849,806
+                    </td>
+                    <td>
+                        <img src="https://s3.coinmarketcap.com/generated/sparklines/web/7d/usd/74.png" >
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="px-6 py-4 whitespace-nowrap">
+                      <div class="flex items-center">
+                        <div class="ml-4">
+                          <div class="text-sm font-medium text-white" >
+                            <img src="https://s2.coinmarketcap.com/static/img/coins/64x64/52.png" width="35" height="35">
+                            </img>
+                              XRP
+                          </div>
+                        </div>
+                      </div>
+                    </td>
+                    <td class="px-6 py-4 whitespace-nowrap text-sm text-white">
+                        ₹69.31
+                    </td>
+                    <td class="px-6 py-4 whitespace-nowrap">
+                        <span class="px-2 inline-flex text-xs leading-5 font-semibold rounded-full bg-red-100 text-red-800">
+                            9.57%
+                        </span>
+                    </td>
+                    <td class="px-6 py-4 whitespace-nowrap">
+                      <span class="px-2 inline-flex text-xs leading-5 font-semibold rounded-full bg-green-100 text-green-800">
+                        7.04%
+                      </span>
+                    </td>
+                    <td class="px-6 py-4 whitespace-nowrap text-sm text-white">
+                        ₹3,185,549,342,393
+                    </td>
+                    <td class="px-6 py-4 whitespace-nowrap text-sm text-white">
+                        ₹339,667,319,682
+                    </td>
+                    <td>
+                        <img src="https://s3.coinmarketcap.com/generated/sparklines/web/7d/usd/52.png" >
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="px-6 py-4 whitespace-nowrap">
+                      <div class="flex items-center">
+                        <div class="ml-4">
+                          <div class="text-sm font-medium text-white" >
+                            <img src="https://s2.coinmarketcap.com/static/img/coins/64x64/6636.png" width="35" height="35">
+                            </img>
+                            Polkadot DOT
+                          </div>
+                        </div>
+                      </div>
+                    </td>
+                    <td class="px-6 py-4 whitespace-nowrap text-sm text-white">
+                        ₹1,779.31
+                    </td>
+                    <td class="px-6 py-4 whitespace-nowrap">
+                        <span class="px-2 inline-flex text-xs leading-5 font-semibold rounded-full bg-red-100 text-red-800">
+                            12.14%
+                        </span>
+                    </td>
+                    <td class="px-6 py-4 whitespace-nowrap">
+                      <span class="px-2 inline-flex text-xs leading-5 font-semibold rounded-full bg-green-100 text-green-800">
+                        14.91%	
+
+                      </span>
+                    </td>
+                    <td class="px-6 py-4 whitespace-nowrap text-sm text-white">
+                        ₹1,698,345,549,345
+                    </td>
+                    <td class="px-6 py-4 whitespace-nowrap text-sm text-white">
+                        ₹219,358,204,785
+                    </td>
+                    <td>
+                        <img src="https://s3.coinmarketcap.com/generated/sparklines/web/7d/usd/6636.png" >
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="px-6 py-4 whitespace-nowrap">
+                      <div class="flex items-center">
+                        <div class="ml-4">
+                          <div class="text-sm font-medium text-white" >
+                            <img src="https://s2.coinmarketcap.com/static/img/coins/64x64/3408.png" width="35" height="35">
+                            </img>
+                            USD Coin USDC
+                          </div>
+                        </div>
+                      </div>
+                    </td>
+                    <td class="px-6 py-4 whitespace-nowrap text-sm text-white">
+                        ₹73.15
+                    </td>
+                    <td class="px-6 py-4 whitespace-nowrap">
+                        <span class="px-2 inline-flex text-xs leading-5 font-semibold rounded-full bg-red-100 text-red-800">
+                            0.03%	
+                        </span>
+                    </td>
+                    <td class="px-6 py-4 whitespace-nowrap">
+                      <span class="px-2 inline-flex text-xs leading-5 font-semibold rounded-full bg-green-100 text-green-800">
+                        1.35%	
+                      </span>
+                    </td>
+                    <td class="px-6 py-4 whitespace-nowrap text-sm text-white">
+                        ₹1,665,292,267,012
+                    </td>
+                    <td class="px-6 py-4 whitespace-nowrap text-sm text-white">
+                        ₹181,893,218,392
+                    </td>
+                    <td>
+                        <img src="https://s3.coinmarketcap.com/generated/sparklines/web/7d/usd/3408.png" >
+                    </td>
+                  </tr>
+                  <td class="px-6 py-4 whitespace-nowrap">
+                    <div class="flex items-center">
+                      <div class="ml-4">
+                        <div class="text-sm font-medium text-white" >
+                          <img src="https://s2.coinmarketcap.com/static/img/coins/64x64/7083.png" width="35" height="35">
+                          </img>
+                          Uniswap UNI
+                        </div>
+                      </div>
+                    </div>
+                  </td>
+                  <td class="px-6 py-4 whitespace-nowrap text-sm text-white">
+                    ₹1,908.62
+                </td>
+                  <td class="px-6 py-4 whitespace-nowrap">
+                      <span class="px-2 inline-flex text-xs leading-5 font-semibold rounded-full bg-red-100 text-red-800">
+                        9.45%	
+                      </span>
+                  </td>
+                  <td class="px-6 py-4 whitespace-nowrap">
+                    <span class="px-2 inline-flex text-xs leading-5 font-semibold rounded-full bg-green-100 text-green-800">
+                        1.78%
+                    </span>
+                  </td>
+                  <td class="px-6 py-4 whitespace-nowrap text-sm text-white">
+                    ₹1,075,248,968,073
+                  </td>
+                  <td class="px-6 py-4 whitespace-nowrap text-sm text-white">
+                    ₹45,107,321,197
+                  </td>
+                  <td>
+                      <img src="https://s3.coinmarketcap.com/generated/sparklines/web/7d/usd/7083.png" >
+                  </td>
+                </tr>
+                <td class="px-6 py-4 whitespace-nowrap">
+                    <div class="flex items-center">
+                      <div class="ml-4">
+                        <div class="text-sm font-medium text-white" >
+                          <img src="https://s2.coinmarketcap.com/static/img/coins/64x64/8916.png" width="35" height="35">
+                          </img>
+                          Internet Computer ICP
+                        </div>
+                      </div>
+                    </div>
+                  </td>
+                  <td class="px-6 py-4 whitespace-nowrap text-sm text-white">
+                    ₹7,981.77
+                </td>
+                  <td class="px-6 py-4 whitespace-nowrap">
+                      <span class="px-2 inline-flex text-xs leading-5 font-semibold rounded-full bg-red-100 text-red-800">
+                        0.63%
+                      </span>
+                  </td>
+                  <td class="px-6 py-4 whitespace-nowrap">
+                    <span class="px-2 inline-flex text-xs leading-5 font-semibold rounded-full bg-green-100 text-green-800">
+                        3.83%
+                    </span>
+                  </td>
+                  <td class="px-6 py-4 whitespace-nowrap text-sm text-white">
+                    ₹1,030,551,243,135
+                  </td>
+                  <td class="px-6 py-4 whitespace-nowrap text-sm text-white">
+                    ₹43,714,457,837
+                  </td>
+                  <td>
+                      <img src="https://s3.coinmarketcap.com/generated/sparklines/web/7d/usd/8916.png" >
+                  </td>
+                </tr>
+                <td class="px-6 py-4 whitespace-nowrap">
+                    <div class="flex items-center">
+                      <div class="ml-4">
+                        <div class="text-sm font-medium text-white" >
+                          <img src="https://s2.coinmarketcap.com/static/img/coins/64x64/1831.png" width="35" height="35">
+                          </img>
+                          Bitcoin Cash BCH
+                        </div>
+                      </div>
+                    </div>
+                  </td>
+                  <td class="px-6 py-4 whitespace-nowrap text-sm text-white">
+                    ₹48,392.93
+                </td>
+                  <td class="px-6 py-4 whitespace-nowrap">
+                      <span class="px-2 inline-flex text-xs leading-5 font-semibold rounded-full bg-red-100 text-red-800">
+                        8.82%	
+                      </span>
+                  </td>
+                  <td class="px-6 py-4 whitespace-nowrap">
+                    <span class="px-2 inline-flex text-xs leading-5 font-semibold rounded-full bg-green-100 text-green-800">
+                        2.00%
+                    </span>
+                  </td>
+                  <td class="px-6 py-4 whitespace-nowrap text-sm text-white">
+                    ₹909,048,683,102
+                  </td>
+                  <td class="px-6 py-4 whitespace-nowrap text-sm text-white">
+                    ₹188,758,946,076
+                  </td>
+                  <td>
+                      <img src="https://s3.coinmarketcap.com/generated/sparklines/web/7d/usd/1831.png" >
+                  </td>
+                </tr>
+                <td class="px-6 py-4 whitespace-nowrap">
+                    <div class="flex items-center">
+                      <div class="ml-4">
+                        <div class="text-sm font-medium text-white" >
+                          <img src="https://s2.coinmarketcap.com/static/img/coins/64x64/1975.png" width="35" height="35">
+                          </img>
+                          Chainlink LINK
+                        </div>
+                      </div>
+                    </div>
+                  </td>
+                  <td class="px-6 py-4 whitespace-nowrap text-sm text-white">
+                    ₹2,064.05
+                </td>
+                  <td class="px-6 py-4 whitespace-nowrap">
+                      <span class="px-2 inline-flex text-xs leading-5 font-semibold rounded-full bg-red-100 text-red-800">
+                        11.69%	
+                      </span>
+                  </td>
+                  <td class="px-6 py-4 whitespace-nowrap">
+                    <span class="px-2 inline-flex text-xs leading-5 font-semibold rounded-full bg-green-100 text-green-800">
+                        0.40%
+                    </span>
+                  </td>
+                  <td class="px-6 py-4 whitespace-nowrap text-sm text-white">
+                    ₹892,236,619,990
+                  </td>
+                  <td class="px-6 py-4 whitespace-nowrap text-sm text-white">
+                    ₹139,460,349,739
+                  </td>
+                  <td>
+                      <img src="https://s3.coinmarketcap.com/generated/sparklines/web/7d/usd/1975.png" >
+                  </td>
+                </tr>
+                <td class="px-6 py-4 whitespace-nowrap">
+                    <div class="flex items-center">
+                      <div class="ml-4">
+                        <div class="text-sm font-medium text-white" >
+                          <img src="https://s2.coinmarketcap.com/static/img/coins/64x64/2.png" width="35" height="35">
+                          </img>
+                          Litecoin LTC
+                        </div>
+                      </div>
+                    </div>
+                  </td>
+                  <td class="px-6 py-4 whitespace-nowrap text-sm text-white">
+                    ₹12,815.11
+                </td>
+                  <td class="px-6 py-4 whitespace-nowrap">
+                      <span class="px-2 inline-flex text-xs leading-5 font-semibold rounded-full bg-red-100 text-red-800">
+                        9.89%	
+                      </span>
+                  </td>
+                  <td class="px-6 py-4 whitespace-nowrap">
+                    <span class="px-2 inline-flex text-xs leading-5 font-semibold rounded-full bg-green-100 text-green-800">
+                        0.22%
+                    </span>
+                  </td>
+                  <td class="px-6 py-4 whitespace-nowrap text-sm text-white">
+                    ₹850,686,411,753
+                  </td>
+                  <td class="px-6 py-4 whitespace-nowrap text-sm text-white">
+                    ₹224,797,805,641
+                  </td>
+                  <td>
+                      <img src="https://s3.coinmarketcap.com/generated/sparklines/web/7d/usd/2.png" >
+                  </td>
+                </tr>
+                <td class="px-6 py-4 whitespace-nowrap">
+                    <div class="flex items-center">
+                      <div class="ml-4">
+                        <div class="text-sm font-medium text-white" >
+                          <img src="https://s2.coinmarketcap.com/static/img/coins/64x64/5426.png" width="35" height="35">
+                          </img>
+                          Solana SOL
+                        </div>
+                      </div>
+                    </div>
+                  </td>
+                  <td class="px-6 py-4 whitespace-nowrap text-sm text-white">
+                    ₹2,618.27
+                </td>
+                  <td class="px-6 py-4 whitespace-nowrap">
+                      <span class="px-2 inline-flex text-xs leading-5 font-semibold rounded-full bg-red-100 text-red-800">
+                        0.20%
+                      </span>
+                  </td>
+                  <td class="px-6 py-4 whitespace-nowrap">
+                    <span class="px-2 inline-flex text-xs leading-5 font-semibold rounded-full bg-green-100 text-green-800">
+                        25.38%	
+                    </span>
+                  </td>
+                  <td class="px-6 py-4 whitespace-nowrap text-sm text-white">
+                    ₹745,861,989,325
+                  </td>
+                  <td class="px-6 py-4 whitespace-nowrap text-sm text-white">
+                    ₹82,787,112,182
+                  </td>
+                  <td>
+                      <img src="https://s3.coinmarketcap.com/generated/sparklines/web/7d/usd/5426.png" >
+                  </td>
+                </tr>
+                <td class="px-6 py-4 whitespace-nowrap">
+                    <div class="flex items-center">
+                      <div class="ml-4">
+                        <div class="text-sm font-medium text-white" >
+                          <img src="https://s2.coinmarketcap.com/static/img/coins/64x64/3890.png" width="35" height="35">
+                          </img>
+                          Polygon MATIC
+                        </div>
+                      </div>
+                    </div>
+                  </td>
+                  <td class="px-6 py-4 whitespace-nowrap text-sm text-white">
+                    ₹118.86
+                </td>
+                  <td class="px-6 py-4 whitespace-nowrap">
+                      <span class="px-2 inline-flex text-xs leading-5 font-semibold rounded-full bg-red-100 text-red-800">
+                        11.08%
+                      </span>
+                  </td>
+                  <td class="px-6 py-4 whitespace-nowrap">
+                    <span class="px-2 inline-flex text-xs leading-5 font-semibold rounded-full bg-green-100 text-green-800">
+                        9.07%
+                    </span>
+                  </td>
+                  <td class="px-6 py-4 whitespace-nowrap text-sm text-white">
+                    ₹740,253,277,503
+                  </td>
+                  <td class="px-6 py-4 whitespace-nowrap text-sm text-white">
+                    ₹158,207,133,470
+                  </td>
+                  <td>
+                      <img src="https://s3.coinmarketcap.com/generated/sparklines/web/7d/usd/3890.png" >
+                  </td>
+                </tr>
+                <td class="px-6 py-4 whitespace-nowrap">
+                    <div class="flex items-center">
+                      <div class="ml-4">
+                        <div class="text-sm font-medium text-white" >
+                          <img src="https://s2.coinmarketcap.com/static/img/coins/64x64/4687.png" width="35" height="35">
+                          </img>
+                          Binance USD BUSD
+                        </div>
+                      </div>
+                    </div>
+                  </td>
+                  <td class="px-6 py-4 whitespace-nowrap text-sm text-white">
+                    ₹73.16
+                </td>
+                  <td class="px-6 py-4 whitespace-nowrap">
+                      <span class="px-2 inline-flex text-xs leading-5 font-semibold rounded-full bg-red-100 text-red-800">
+                        0.03%	
+                      </span>
+                  </td>
+                  <td class="px-6 py-4 whitespace-nowrap">
+                    <span class="px-2 inline-flex text-xs leading-5 font-semibold rounded-full bg-green-100 text-green-800">
+                        1.35%	
+
+                    </span>
+                  </td>
+                  <td class="px-6 py-4 whitespace-nowrap text-sm text-white">
+                    ₹686,265,479,008
+                  </td>
+                  <td class="px-6 py-4 whitespace-nowrap text-sm text-white">
+                    ₹476,694,534,608
+                  </td>
+                  <td>
+                      <img src="https://s3.coinmarketcap.com/generated/sparklines/web/7d/usd/4687.png" >
+                  </td>
+                </tr>
+                <td class="px-6 py-4 whitespace-nowrap">
+                    <div class="flex items-center">
+                      <div class="ml-4">
+                        <div class="text-sm font-medium text-white" >
+                          <img src="https://s2.coinmarketcap.com/static/img/coins/64x64/512.png" width="35" height="35">
+                          </img>
+                          Stellar XLM
+                        </div>
+                      </div>
+                    </div>
+                  </td>
+                  <td class="px-6 py-4 whitespace-nowrap text-sm text-white">
+                    ₹27.99
+                </td>
+                  <td class="px-6 py-4 whitespace-nowrap">
+                      <span class="px-2 inline-flex text-xs leading-5 font-semibold rounded-full bg-red-100 text-red-800">
+                        10.38%
+                      </span>
+                  </td>
+                  <td class="px-6 py-4 whitespace-nowrap">
+                    <span class="px-2 inline-flex text-xs leading-5 font-semibold rounded-full bg-green-100 text-green-800">
+                        0.32%	
+
+                    </span>
+                  </td>
+                  <td class="px-6 py-4 whitespace-nowrap text-sm text-white">
+                    ₹646,806,855,665
+                  </td>
+                  <td class="px-6 py-4 whitespace-nowrap text-sm text-white">
+                    ₹67,774,984,882
+                  </td>
+                  <td>
+                      <img src="https://s3.coinmarketcap.com/generated/sparklines/web/7d/usd/512.png" >
+                  </td>
+                </tr>
+                <td class="px-6 py-4 whitespace-nowrap">
+                    <div class="flex items-center">
+                      <div class="ml-4">
+                        <div class="text-sm font-medium text-white" >
+                          <img src="https://s2.coinmarketcap.com/static/img/coins/64x64/2416.png" width="35" height="35">
+                          </img>
+                          THETA
+                        </div>
+                      </div>
+                    </div>
+                  </td>
+                  <td class="px-6 py-4 whitespace-nowrap text-sm text-white">
+                    ₹618.40
+                </td>
+                  <td class="px-6 py-4 whitespace-nowrap">
+                      <span class="px-2 inline-flex text-xs leading-5 font-semibold rounded-full bg-red-100 text-red-800">
+                        3.27%	
+                      </span>
+                  </td>
+                  <td class="px-6 py-4 whitespace-nowrap">
+                    <span class="px-2 inline-flex text-xs leading-5 font-semibold rounded-full bg-green-100 text-green-800">
+                        10.51%
+                    </span>
+                  </td>
+                  <td class="px-6 py-4 whitespace-nowrap text-sm text-white">
+                    ₹633,159,897,859
+                  </td>
+                  <td class="px-6 py-4 whitespace-nowrap text-sm text-white">
+                    ₹64,445,447,409
+                  </td>
+                  <td>
+                      <img src="https://s3.coinmarketcap.com/generated/sparklines/web/7d/usd/2416.png" >
+                  </td>
+                </tr>
+                <td class="px-6 py-4 whitespace-nowrap">
+                    <div class="flex items-center">
+                      <div class="ml-4">
+                        <div class="text-sm font-medium text-white" >
+                          <img src="https://s2.coinmarketcap.com/static/img/coins/64x64/3077.png" width="35" height="35">
+                          </img>
+                          VeChain VET
+                        </div>
+                      </div>
+                    </div>
+                  </td>
+                  <td class="px-6 py-4 whitespace-nowrap text-sm text-white">
+                    ₹9.30
+                </td>
+                  <td class="px-6 py-4 whitespace-nowrap">
+                      <span class="px-2 inline-flex text-xs leading-5 font-semibold rounded-full bg-red-100 text-red-800">
+                        2.45%		
+                      </span>
+                  </td>
+                  <td class="px-6 py-4 whitespace-nowrap">
+                    <span class="px-2 inline-flex text-xs leading-5 font-semibold rounded-full bg-green-100 text-green-800">
+                        21.60%
+                    </span>
+                  </td>
+                  <td class="px-6 py-4 whitespace-nowrap text-sm text-white">
+                    ₹624,446,404,522
+                  </td>
+                  <td class="px-6 py-4 whitespace-nowrap text-sm text-white">
+                    ₹133,267,204,781
+                  </td>
+                  <td>
+                      <img src="https://s3.coinmarketcap.com/generated/sparklines/web/7d/usd/3077.png" >
+                  </td>
+                </tr>
+                
+      
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+      </div>
+</body>
+</html>
